@@ -10,7 +10,8 @@ body {
 }
 
 .title,
-.subtitle {
+.subtitle
+.subtitle2 {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -23,6 +24,10 @@ body {
 
 .subtitle {
     font-size: 30px;
+}
+
+.subtitle2{
+    font-size: 20px;
 }
 
 .text, .link {
