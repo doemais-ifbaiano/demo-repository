@@ -1,69 +1,67 @@
 #colaborators {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: #cfbdff;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #cfbdff;
 }
 
 #colaborators-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 35px;
-    width: 90%;
-    padding: 25px;
-    li{
-        width: 70%;
-    }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 35px;
+  width: 90%;
+  padding: 25px;
+  li {
+    width: 70%;
+  }
 }
 
 .card-colaborator {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    background-color:rgb(255, 255, 255);
-    transition: 0.3s;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 
 .card-colaborator:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container-colaborator {
-    padding: 2px 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  padding: 2px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
-    h3,
-    span {
-        text-align: center;
-    }
-
+  h3,
+  span {
+    text-align: center;
+  }
 }
 
 .colaborador-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 25px;
 
-    i {
-        font-size: 20px;
-        color: #5522df;
-    }
+  i {
+    font-size: 20px;
+    color: #5522df;
+  }
 }
