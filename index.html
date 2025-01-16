@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./about.css">
     <link rel="stylesheet" href="./tech.css">
     <link rel="stylesheet" href="./colaborators.css">
+    <link rel="stylesheet" href="./responsive.css">
 
     <title>Doe+</title>
 </head>
@@ -24,7 +25,10 @@
             </a>
         </div>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="onToggleMenu()">
+                <img src="assets/menu.svg" width="25"/>
+            </div>
+            <ul class="menu">
                 <li><a class="link" href="#home">Home</a></li>
                 <li><a class="link" href="#about">Sobre</a></li>
                 <li><a class="link" href="#tools">Tecnologias</a></li>
@@ -45,15 +49,17 @@
     <section id="about">
         <h2 class="subtitle">Sobre</h2>
         <p class="text">Esta é uma iniciativa para ajudar a comunidade, conectando possíveis doadores com instituições e
-            organizações que precisam de ajuda. O projeto visa o desenvolvimento de uma aplicação disponível para download na Play Store, 
-            que facilite a realização de doações para instituições. A plataforma permitirá que os usuários doem recursos financeiros 
-            e materiais, acompanhem campanhas, conheçam as instituições que são atendidas e colaborem de forma ativa na causa, 
+            organizações que precisam de ajuda. O projeto visa o desenvolvimento de uma aplicação disponível para
+            download na Play Store,
+            que facilite a realização de doações para instituições. A plataforma permitirá que os usuários doem recursos
+            financeiros
+            e materiais, acompanhem campanhas, conheçam as instituições que são atendidas e colaborem de forma ativa na
+            causa,
             promovendo então uma rede de solidariedade.</p>
     </section>
     <section id="tools">
         <h2 class="subtitle">Tecnologias</h2>
         <ul id="tools-list">
-
             <li>
                 <div class="card-tools">
                     <h3 class="subtitle2">Frontend</h3>
@@ -89,29 +95,27 @@
                     <h3 class="subtitle2">Líder: Gabriel Oliveira</h3>
                 </div>
             </li>
+            <li>
+                <div class="card-tools">
+                    <h3 class="subtitle2">UI/UX Designer</h3>
+                    <ul>
+                        <li class="text">Figma</li>
+                    </ul>
+                    <h3 class="subtitle2">Líder: Kauã Santos</h3>
+                </div>
+            </li>
+
+            <li>
+                <div class="card-tools">
+                    <h3 class="subtitle2">QA</h3>
+                    <ul>
+                        <li class="text">Appium</li>
+                    </ul>
+                    <h3 class="subtitle2">Líder: Hércules Santos</h3>
+                </div>
+            </li>
         </ul>
-<!--
-        <li>
-            <div class="card-tools">
-                <h3 class="subtitle2">UI/UX Designer</h3>
-                <ul>
-                    <li class="text">Figma</li>
-                </ul>
-                <h3 class="subtitle2">Líder: Kauã Santos</h3>
-            </div>
-        </li>
-    </ul>
-    <li>
-        <div class="card-tools">
-            <h3 class="subtitle2">QA</h3>
-            <ul>
-                <li class="text">...</li>
-            </ul>
-            <h3 class="subtitle2">Líder: Hércules Santos</h3>
-        </div>
-    </li>
-</ul>
--->
+
     </section>
     <section id="colaborators">
         <h2 class="subtitle">Colaboradores</h2>
@@ -123,23 +127,23 @@
                         <h3 class="subtitle2">Francisco Hélio</h3>
                         <span class="text">Líder</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </li>
             <li>
                 <div class="card-colaborator">
-                    <img src="./assets/temp.jpg" alt="card colaborador">
+                    <img src="./assets/flavia.jpg" alt="card colaborador">
                     <div class="container-colaborator">
-                        <h3 class="subtitle2">Flávia de Jesus</h3>
+                        <h3 class="subtitle2">Flávia Correia</h3>
                         <span class="text">Líder</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="https://github.com/fllaviacorreia" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="https://www.linkedin.com/in/fllaviacorreia/"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://www.dev.to/fllaviacorreia"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -151,9 +155,9 @@
                         <h3 class="subtitle2">Henrique Santos</h3>
                         <span class="text">Gerente de Projetos</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="https://github.com/Henrsilva12" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="https://www.linkedin.com/in/henrique-santos-4b7901287/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <!-- <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -165,9 +169,9 @@
                         <h3 class="subtitle2">Geovanna Alves</h3>
                         <span class="text">Gerente de Projetos</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -179,9 +183,9 @@
                         <h3 class="subtitle2">Kauã Santos</h3>
                         <span class="text">UI/UX Designer</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -193,9 +197,9 @@
                         <h3 class="subtitle2">Bruno Flores</h3>
                         <span class="text">UI/UX Designer</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -207,9 +211,9 @@
                         <h3 class="subtitle2">Ryann Santana</h3>
                         <span class="text">UI/UX Designer</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -221,9 +225,9 @@
                         <h3 class="subtitle2">Luis Felipe</h3>
                         <span class="text">UI/UX Designer</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -235,9 +239,9 @@
                         <h3 class="subtitle2">Lucas Silva</h3>
                         <span class="text">Developer Back-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -249,9 +253,9 @@
                         <h3 class="subtitle2">Daniel Sampaio</h3>
                         <span class="text">Developer Back-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="https://github.com/sampas7" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="https://www.linkedin.com/in/dsampaior/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <!-- <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -263,9 +267,9 @@
                         <h3 class="subtitle2">Adimael Santos </h3>
                         <span class="text">Developer Back-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -277,9 +281,9 @@
                         <h3 class="subtitle2">Maria Fernanda</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="https://github.com/mafxrnandxs" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="https://www.linkedin.com/in/maria-fernanda-fernandes-0a8aa6250/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <!-- <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -291,9 +295,9 @@
                         <h3 class="subtitle2">Chaielle Emille</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -305,9 +309,9 @@
                         <h3 class="subtitle2">Arthur Coqueiro</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -319,9 +323,9 @@
                         <h3 class="subtitle2">Emanuel Brito</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -333,9 +337,9 @@
                         <h3 class="subtitle2">Felipe Mares</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -347,9 +351,9 @@
                         <h3 class="subtitle2">Henrique Fontoura</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="https://github.com/r1yck" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="https://www.linkedin.com/in/rickedin/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <!-- <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -361,9 +365,9 @@
                         <h3 class="subtitle2">Gabriel Silva</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -375,9 +379,9 @@
                         <h3 class="subtitle2">Gabriel Oliveira</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -389,9 +393,9 @@
                         <h3 class="subtitle2">Ayrton Lopes</h3>
                         <span class="text">Developer Front-end</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="https://github.com/Ayrton54" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="https://www.linkedin.com/in/ayrton-lopes/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <!-- <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -403,9 +407,9 @@
                         <h3 class="subtitle2">Hércules Santos</h3>
                         <span class="text">Quality Assurance</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -417,9 +421,9 @@
                         <h3 class="subtitle2">Leonardo Carvalho</h3>
                         <span class="text">Quality Assurance</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -431,9 +435,9 @@
                         <h3 class="subtitle2">Vitor Almeida</h3>
                         <span class="text">Quality Assurance</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="https://github.com/vialsa" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="https://www.linkedin.com/in/vitor-santos-9b4500221" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://vialsa.github.io/" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -445,9 +449,9 @@
                         <h3 class="subtitle2">Amanda Tavares</h3>
                         <span class="text">Engenheira de Software</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -459,9 +463,9 @@
                         <h3 class="subtitle2">Natanael Gonçalves</h3>
                         <span class="text">Engenheiro de Software</span>
                         <ul class="colaborador-links">
-                            <li><a href="#"><i class="fa-brands fa-github"></i></li>
-                            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-solid fa-image-portrait"></i></a></li>
+                            <li><a href="https://github.com/natanael9999" target="_blank"><i class="fa-brands fa-github"></i></li>
+                            <li><a href="https://www.linkedin.com/in/natanael-dos-santos-gonçalves/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                            <!-- <li><a href="#" target="_blank"><i class="fa-solid fa-image-portrait"></i></a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -479,7 +483,8 @@
         <div class="footer-links">
             <section class="ifbaiano">
                 <a href="https://www.ifbaiano.edu.br/unidades/itapetinga/" class="subtitle2">IFBaiano</a>
-                <span class="text-sm">Instituto Federal de Educação, Ciência e Tecnologia Baiano – Campus Itapetinga</span>
+                <span class="text-sm">Instituto Federal de Educação, Ciência e Tecnologia Baiano – Campus
+                    Itapetinga</span>
                 <span class="text-sm">Km 02 - Clerolandia, Itapetinga-Bahia, CEP: 45700-000</span>
                 <span class="text-sm">Tel.: (77) 99969-7107</span>
                 <span class="text-sm">E-mail: gabinete@itapetinga.ifbaiano.edu.br </span>
@@ -487,13 +492,20 @@
             <section class="doemais">
                 <a href="https://github.com/doemais-ifbaiano" class="subtitle2">Doe+</a>
                 <span class="text-sm">Feito por alunos do Bacharelado em Sistemas de Informação do IFBaiano</span>
-                <span class="text-sm">Acesse o repositório: <a class="text-sm" href="https://github.com/doemais-ifbaiano/demo-repository" style="color: blue;">aqui</a></span>
+                <span class="text-sm">Acesse o repositório: <a class="text-sm"
+                        href="https://github.com/doemais-ifbaiano/demo-repository" style="color: blue;">aqui</a></span>
                 <span class="text-sm">Acesse o site: <a class="text-sm" href="#" style="color: blue;">aqui</a></span>
                 <span class="text-sm">Email: doemais@example.com</span>
 
             </section>
         </div>
     </footer>
+    <script>
+        function onToggleMenu(){
+            var menu = document.querySelector('.menu')
+            menu.classList.toggle('open');
+        }
+    </script>
     <script src="https://kit.fontawesome.com/5ed874a900.js" crossorigin="anonymous"></script>
 </body>
 

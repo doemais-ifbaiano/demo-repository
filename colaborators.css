@@ -5,6 +5,9 @@
   justify-content: center;
   width: 100%;
   background-color: #cfbdff;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 #colaborators-list {
@@ -24,7 +27,9 @@
   transition: 0.3s;
   border-radius: 5px;
   padding: 10px;
-  width: 100%;
+  
+  min-width: 220px;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,6 +37,9 @@
 
   img {
     width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
   }
 }
 
@@ -56,7 +64,7 @@
 .colaborador-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin-top: 25px;
 
